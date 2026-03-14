@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">Sunrise Public School</div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a class="nav-btn" href="#courses">Courses</a></li>
+                <li><a class="nav-btn" href="#teachers">Teachers</a></li>
+                <li><a class="nav-btn" href="#gallery">Gallery</a></li>
+                <li><a class="nav-btn" href="#faq">FAQ</a></li>
+                <li><a class="nav-btn" href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Welcome to Modern School</h2>
+        <p>Quality Education for a Better Future</p>
+    </section>
+
+
+    <!-- COURSES -->
+    <section id="courses" class="courses">
+
+        <h2>Our Courses</h2>
+
+        <div class="filter-buttons">
+            <button data-filter="all">All</button>
+            <button data-filter="science">Science</button>
+            <button data-filter="arts">Arts</button>
+            <button data-filter="tech">Technology</button>
+        </div>
+
+        <div class="course-container">
+
+            <div class="course science">Physics</div>
+            <div class="course science">Chemistry</div>
+            <div class="course arts">History</div>
+            <div class="course arts">Literature</div>
+            <div class="course tech">Web Development</div>
+            <div class="course tech">Computer Science</div>
+
+        </div>
+
+    </section>
+
+
+    <section id="teachers" class="teachers-section">
+
+        <h2 class="section-title">Our Teachers</h2>
+
+        <div class="teachers-container">
+
+            <!-- Teacher 1 -->
+            <div class="teacher-card">
+                <img src="./images/Staff/johan.png" alt="Teacher">
+                <h3>John Smith</h3>
+                <p>Physics Teacher</p>
+                <button class="profile-btn">View Profile</button>
+            </div>
+
+            <!-- Teacher 2 -->
+            <div class="teacher-card">
+                <img src="./images/Staff/Sarah.png" alt="Teacher">
+                <h3>Sarah Khan</h3>
+                <p>Computer Science</p>
+                <button class="profile-btn">View Profile</button>
+            </div>
+
+            <!-- Teacher 3 -->
+            <div class="teacher-card">
+                <img src="./images/Staff/Abiha khan.png" alt="Teacher">
+                <h3>Abiha Khan</h3>
+                <p>Mathematics</p>
+                <button class="profile-btn">View Profile</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- MODAL -->
+    <div class="modal" id="teacherModal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h3 id="teacherName"></h3>
+            <p id="teacherInfo"></p>
+        </div>
+    </div>
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+
+        <h2>School Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="./images/1.jpg" class="gallery-img">
+            <img src="./images/2.jpg" class="gallery-img">
+            <img src="./images/3.jpg" class="gallery-img">
+            <img src="./images/4.jpg" class="gallery-img">
+            <img src="./images/5.jpg" class="gallery-img">
+            <img src="./images/6.jpg" class="gallery-img">
+            <img src="./images/7.jpg" class="gallery-img">
+            <img src="./images/8.jpg" class="gallery-img">
+
+        </div>
+
+    </section>
+
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox">
+        <img id="lightboxImg">
+    </div>
+
+
+    <!-- FAQ -->
+    <section id="faq">
+
+        <h2>FAQ</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">What is admission process?</button>
+            <div class="faq-answer">Fill the admission form and attend interview.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do you offer scholarships?</button>
+            <div class="faq-answer">Yes, merit based scholarships available.</div>
+        </div>
+
+    </section>
+
+
+    <!-- ADMISSION FORM -->
+    <section class="admission">
+
+        <h2>Admission Form</h2>
+
+        <form id="admissionForm">
+
+            <input type="text" id="name" placeholder="Student Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="number" id="age" placeholder="Age">
+
+            <button type="submit">Apply</button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <div class="contact-container">
+
+            <form id="contactForm">
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Enter subject">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+                </div>
+
+                <button type="submit" class="contact-btn">Send Message</button>
+
+                <p id="formStatus"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
